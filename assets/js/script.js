@@ -1,29 +1,48 @@
-function runGame(){
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("you clicked submit!");
+            }
+
+            else {
+                gameType = this.getAttribute("data-type");
+                alert(`you clicked ${gameType}`);
+            }
+        });
+
+    }
+});
+
+function runGame() {
 
 }
 
-function checkAnswer(){
-
-}
-function calculateCorrectAnswer(){
+function checkAnswer() {
 
 }
 
-function incrementScore (){
-
-}
-function incrementWrongAnswer(){
+function calculateAnswer() {
 
 }
 
-function displayAdditionQuestion(){
-    
-}
-
-function displaySubtractQuestion(){
+function incrementScore() {
 
 }
 
-function displayMultiplyQuestion(){
+function incrementWrongAnswer() {
+
+}
+
+function displayAdditionQuestion() {
+
+}
+
+function displaySubtractQuestion() {
+
+}
+
+function displayMultiplyQuestion() {
 
 }
